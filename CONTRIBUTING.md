@@ -168,7 +168,7 @@ npx prettier --prose-wrap always --write "**/*.md"
 Note that the command above requires Node.js and npm to be installed on your system. As an alternative, you can run this command using Docker:
 
 ```console
-$ docker run --rm -v ./docs:/docs/ node:alpine npx prettier --prose-wrap always --write "/docs/**/*.md"
+$ docker run --rm -v .:/src/ node:alpine npx prettier --prose-wrap always --write "/src/docs/**/*.md"
 ```
 
 ## Releases
